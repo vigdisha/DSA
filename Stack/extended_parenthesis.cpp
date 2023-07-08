@@ -12,6 +12,7 @@ struct Stack{
 
 void create(Stack *st,char *s)
 {
+    //set the stack size equal to the size of the characters entered
     st->size=strlen(s);
     st->top=-1;
     st->S=new char[st->size];
@@ -62,9 +63,11 @@ int isFull(Stack st)
 int isBalanced(char *s)
 {
     int i;
+    //initialize the stack
     struct Stack st;
     create(&st,s);
 
+    //parenthesis matching procedure 
     for(i=0;s[i]!='\0';i++)
     {
         if(s[i]=='(' || s[i]=='{' || s[i]=='[')

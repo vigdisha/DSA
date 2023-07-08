@@ -62,10 +62,12 @@ int isFull(Stack st)
 
 int isBalanced(char *s)
 {
+    //intialize stack
     int i;
     struct Stack st;
     create(&st,s);
-
+    
+    //parenthesis matching procedure
     for(i=0;s[i]!='\0';i++)
     {
         if(s[i]=='(')
