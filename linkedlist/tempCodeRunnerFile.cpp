@@ -1,1 +1,2 @@
-display(second)
+#include<cstdio>
+#include<cstdlib>
