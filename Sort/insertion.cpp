@@ -29,5 +29,4 @@ int main() {
   insert(A, n);
   
   cout << "Sorted Array in Ascending Order:\n";  
-  printArray(A, n);
-}
+  printArray(A, n);}

@@ -28,8 +28,7 @@ void quickSort(int arr[], int low, int high)
 {
 	if (low < high) {
 
-		// pi is partitioning index, arr[p]
-		// is now at right place
+	
 		int pi = partition(arr, low, high);
 
 		// Separately sort elements before
