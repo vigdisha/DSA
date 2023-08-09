@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 void insert(int A[], int n){
   for(int i=1; i<n;i++){
     int key = A[i];
