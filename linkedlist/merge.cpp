@@ -52,6 +52,8 @@ void create2(int A[],int n)
 void Merge(struct Node *p,struct Node *q)
 {
  struct Node *last;
+ //first we will create a merged linkedlist
+ //whose firts node will be sammler node among both
  if(p->data < q->data)
  {
  third=last=p;
@@ -64,6 +66,9 @@ void Merge(struct Node *p,struct Node *q)
  q=q->next;
  third->next=NULL;
  }
+//now comapre the nodes
+//simulatneously add the new nodes
+
  while(p && q)
  {
  if(p->data < q->data)
