@@ -70,10 +70,22 @@ else
 }
 }
 
+// Node* Rinsert(Node* head, int x){
+//     if(head==nullptr){
+//         return new Node head(x);
+//     }
+//     else{
+//         head->next=Rinsert(head->next, x);
+//         return head;
+//     }
+// }
+
 int main(){
     int A[] = {3,5,7};
     Create(A, 3);
+    Node* head =NULL;
     
     Insert(first, 0, 10);
+    // Rinsert(head,10);
     display(first);
 }

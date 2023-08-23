@@ -1,2 +1,1 @@
-#include<cstdio>
-#include<cstdlib>
+Rinsert(head,10);
