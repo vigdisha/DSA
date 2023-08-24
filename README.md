@@ -1,3 +1,3 @@
 # DSA
-codes for Data Structures.
+codes for Data Structures + Leetcode questions
 
