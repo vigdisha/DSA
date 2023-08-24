@@ -15,7 +15,7 @@ class solution{
             prev = pres;
             present = next;
 
-            while(next != nullptr){
+            if(next != nullptr){
                 next = next->next;
             }
         }
