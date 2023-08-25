@@ -12,7 +12,6 @@
 //  *     ListNode(int x) : val(x), next(nullptr) {}
 //  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
 //  * };
- 
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
@@ -21,7 +20,7 @@ public:
         }
         ListNode *current = head;
         ListNode *prev = nullptr;
-
+//skip i-1 ele
         for(int i=0; current !=NULL && i<left-1;i++)
 {
         prev = current ;
@@ -50,5 +49,5 @@ if(last != nullptr){
 
 newend ->next = current;
 return head;
- }
+}
 }; 
