@@ -3,8 +3,9 @@ using namespace std;
 
 void displayNumbers(int n) {
     if (n >= 1) {
+        cout << n << " ";
         displayNumbers(n - 1); // Recursively call with n-1
-         cout << n << " ";
+        //  cout << n << " ";
        
     }
 }

@@ -31,7 +31,7 @@ public:
             //124 = 1^2 +2^2 + 4^2
             int rem = number % 10;
             ans += rem * rem;
-            number = number / 10; // Corrected this line
+            number = number / 10; 
         }
         return ans;
     }
