@@ -1,5 +1,5 @@
 #include <iostream>
-
+//inheritence
 class Camera {
 protected:
     int resolution;

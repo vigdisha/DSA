@@ -37,6 +37,8 @@ int main()
 	// Using new keyword:create an object of class car
     //using dynamic allocation in heap
 	//implicit constructor
+	//you need to use pointers for the same in cpp
+
 	car *p = new car("Honda", 2017);
 	p->display();
     }
