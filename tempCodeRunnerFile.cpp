@@ -1,1 +1,1 @@
- // cout<<w1.weight<<endl;
+endl
