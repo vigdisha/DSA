@@ -48,35 +48,21 @@ int isEmpty()
  return front==NULL;
 }
 
-void BFS(int G[][7], int start, int n)
-{
-    int i = start;
-    //initially the visited array will have values 0 
-    int visited[7] = {0};
 
-    printf("%d", i);
-    visited[i] = 1;
-    // add visited vertex in queue for exploration
-    enqueue(i);
 
-    while (!isEmpty())
-    {
-        // remove vertex from queue for exploration
-        int u = dequeue();
-        for (int j = 1; j<n; j++)
-        {
-            if (G[u][j] == 1 && visited[j] == 0)
-            // is an edge and not yet visited
-            {
-                //v is added in visited
-                printf("%d", j);
-                visited[j] = 1;
-                enqueue(j);
-            }
+void DFS(int G[][7], int start, int n){
+    static int visited[7] = {0};
+    if(visited [start] ==0){
+    printf("%d", start);
+    visited[start] =1;
+    }
+    for(int v=1; v<n;v++){
+        if(G[start][v]==1 && visited[v] ==0){
+            DFS(G,v,n);
         }
     }
-}
 
+}
 
 int main()
 {
@@ -87,11 +73,8 @@ int main()
                    {0, 0, 1, 1, 0, 1, 1},
                    {0, 0, 0, 0, 1, 0, 0},
                    {0, 0, 0, 0, 1, 0, 0}};
-    BFS(G, 3, 7);
+ 
     printf("\n");
-    
+    DFS(G,3,7);
     return 0;
 }
-
-
-// time complexity =O(n^2)
