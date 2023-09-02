@@ -1,6 +1,3 @@
-// C++ code to print BFS traversal from a given
-// source vertex
-
 #include <bits/stdc++.h>
 using namespace std;
 

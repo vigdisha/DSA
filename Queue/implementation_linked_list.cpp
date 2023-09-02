@@ -11,7 +11,7 @@ struct Node
 
 void enqueue(int x){
     struct Node *t;
-    t=(struct Node *)malloc(sizeof(struct Node));
+    t=(struct Node*)malloc(sizeof(struct Node));
     if(t==NULL){
       printf("queue is full");
     }

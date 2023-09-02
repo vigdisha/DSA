@@ -4,6 +4,8 @@
         "iostream": "cpp",
         "xutility": "cpp",
         "queue": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "initializer_list": "cpp",
+        "xiosbase": "cpp"
     }
 }
