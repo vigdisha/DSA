@@ -12,6 +12,7 @@ class solution{
 
         while(pres != nullptr){
             pres->next = prev;
+            //moving forward
             prev = pres;
             present = next;
 

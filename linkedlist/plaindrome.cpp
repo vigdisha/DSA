@@ -38,7 +38,7 @@ public:
             if(prog != nullptr){
                 prog = prog->next;
             }
-        }
+        
     return  prev;
     }
 
@@ -65,3 +65,4 @@ public:
         reverseList(rereverse) ;
     }
 };
+}
