@@ -5,8 +5,8 @@ class Complex{
 int a, b;
 
 public:
+//constructor:
 Complex(void);
-//constructor
 //automatically invoked when object is created
 void printdata(){
     cout<<"Your number is "<<a<<" + "<<b<<"i"<<endl;

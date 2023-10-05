@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//parent class
 class Human{
     public:
     int height;
@@ -17,7 +17,7 @@ this->weight =w;
 cout<< w;
 }
 };
-
+//child class
 class woman:public Human{
     public:
     int roll_no;
