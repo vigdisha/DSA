@@ -40,3 +40,33 @@ int main()
 	cout << " reach the end is " << minJumps(arr, 0, n - 1);
 	return 0;
 }
+
+
+#include <iostream>
+#include <vector>
+#include <climits>
+
+using namespace std;
+
+int minJumpsToReachWife(int N, vector<int>& Arr) {
+    vector<int> minJumps(N, INT_MAX);
+    minJumps[0] = 0;  // It takes 0 jumps to reach the first shop
+
+    for (int i = 1; i < N; ++i) {
+        for (int j = 0; j < i; ++j) {
+            if (j + Arr[j] >= i && minJumps[j] != INT_MAX) {
+                minJumps[i] = min(minJumps[i], minJumps[j] + 1);
+            }
+        }
+    }
+
+    return (minJumps[N - 1] != INT_MAX) ? minJumps[N - 1] : -1;
+}
+
+int main() {
+    int N = 6;  // Number of shops
+    vector<int> Arr = {1, 3, 5, 8, 9, 2};  // Arr[i] is the jump range from shop i
+    int result = minJumpsToReachWife(N, Arr);
+    cout << result << endl;  // This will output the minimum number of jumps
+    return 0;
+}
