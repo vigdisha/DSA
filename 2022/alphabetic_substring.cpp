@@ -12,7 +12,6 @@ int findString(string str){
     if(str[i] +1 == str[i+1]){
         result ++;
         while(str[i] +1 ==str[i + 1]){
-
         i++;
     }
     }
