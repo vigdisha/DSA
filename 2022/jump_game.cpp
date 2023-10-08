@@ -33,7 +33,7 @@ int minJumps(int arr[], int l, int h)
 
 int main()
 {
-	int arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
+	int arr[] = {2, 3, 1, 1, 4};
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	cout << "Minimum number of jumps to";
