@@ -1,0 +1,14 @@
+step 1:
+outer loop = no of rows
+          == no of times outer loop will run
+
+step 2:
+with each row how many cols are present
+== types of elenents in cols
+//for every row run the col
+for(int col=1;col<=row;col++)
+
+step 3:"what to print"
+eg: */Alaphabets/nos
+
+
