@@ -16,3 +16,4 @@ eg: */Alaphabets/nos
  we now need to add new line after creation of one row:
 add cout<<"";
 
+CREATE A FUCNTION WITH INT n ARGUMENT
