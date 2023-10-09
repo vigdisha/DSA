@@ -11,4 +11,6 @@ for(int col=1;col<=row;col++)
 step 3:"what to print"
 eg: */Alaphabets/nos
 
+we now need to add new line after creation of one row:
+add cout<<"";
 
