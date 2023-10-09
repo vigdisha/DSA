@@ -6,6 +6,8 @@ step 2:
 with each row how many cols are present
 == types of elenents in cols
 //for every row run the col
+
+then run the loop: (according to the question/pattern)
 for(int col=1;col<=row;col++)
 
 step 3:"what to print"
