@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//jab pivot bada h tab swap kerna i and j ko
 int partition(int arr[], int low, int high)
 {
 	// the pivot is set
@@ -20,6 +20,7 @@ int partition(int arr[], int low, int high)
 			swap(arr[i], arr[j]);
 		}
 	}
+	//finally place pivot in correct position
 	swap(arr[i + 1], arr[high]);
 	return (i + 1);
 }

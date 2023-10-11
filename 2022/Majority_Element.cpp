@@ -4,37 +4,25 @@
 
 #include <iostream>
 using namespace std;
-int findMajority(int arr[], int n)
-{
-    int maxCount = 0;
-    int index = -1;
+vector<int> majorityElementII(vector<int> &nums) {
+    int n = nums.size();
+    unordered_map<int, int> m;
+    vector<int> ans;
 
-    for (int i = 0; i < n; i++)
-    {
-        int count = 0;
-        for (int j = 0; j < n; j++)
-        {
-            if (arr[i] == arr[j]){
-                count++;
-            }
-        }
+    // Step 1: Count occurrences of each element
+    for (int i = 0; i < n; i++) {
+        m[nums[i]]++;
+    }
 
-        if (count > maxCount)
-        {
-            maxCount = count;
-            index = i;
+    // Step 2: Find elements with count > n/3
+    int threshold = n / 3;
+    for (auto x : m) {
+        if (x.second > threshold) {
+            ans.push_back(x.first);
         }
     }
 
-    if (maxCount > n / 2)
-    {
-        cout << arr[index] << endl;
-    }
-    else
-    {
-        cout << "no majority element";
-    }
-    return 0;
+    return ans;
 }
 int main()
 {

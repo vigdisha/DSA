@@ -44,17 +44,21 @@ public:
 
      bool isPalindrome(ListNode* head) {
         ListNode *mid = middleNode();
+        //middle as head
         ListNode *secondhead = reverseList(mid);
         ListNode *rereverse = secondhead;
 
+        //compare head of reverse ad non reverse parts of linkedlist
         while(head != nullptr && secondhead != nullptr){
+            //if the reversed list does not match then break;
             if(head->val != secondhead->val){
                 break;
             }
+            //move to next element 
             head = head->next;
             secondhead = secondhead->next;
         }
-
+            //if loop completes without breaking
         if(head == nullptr && secondhead == nullptr){
             return true;
         }else{
@@ -66,3 +70,7 @@ public:
     }
 };
 }
+
+
+// NOTE-->head == nullptr: This part of the condition checks if the head pointer has become nullptr
+// . In a linked list, when you reach the end of the list, you should encounter a nullptr, indicating that there are no more nodes to traverse in the original list.

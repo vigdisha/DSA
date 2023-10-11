@@ -7,6 +7,11 @@
         "ostream": "cpp",
         "initializer_list": "cpp",
         "xiosbase": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "algorithm": "cpp",
+        "list": "cpp",
+        "memory": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp"
     }
 }
