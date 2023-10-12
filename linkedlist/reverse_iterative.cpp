@@ -1,5 +1,5 @@
 
-//leetocode :reverse
+//leetcode :reverse
 class solution{
     public:
     void reverse(){
