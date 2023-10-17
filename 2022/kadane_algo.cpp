@@ -27,7 +27,8 @@ int kadaneAlgo(int &arr[]){
      int max = INT16_MIN;
      //keep adding to the max value 
      //if the sum is greater than max
-     for(int i=0;i<n;i++){
+     for(int i=0;i<n;i++){//<--- creates subarray
+     
 
         sum += arr[i];
 
