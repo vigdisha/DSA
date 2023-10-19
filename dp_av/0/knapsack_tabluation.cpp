@@ -61,3 +61,6 @@ int main()
 // ie:if  (v==0||w==0)
 // return dp[m][n]=0;
 // 2)using loop :
+
+// weight array will act as the item array and the 
+// weight will act as the target
