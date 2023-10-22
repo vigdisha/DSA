@@ -26,7 +26,7 @@ int FindMin(int arr[], int n)
     // Compute result using recursive function
     return findMinRec(arr, n, 0, sumTotal);
 }
-
+ 
 int main()
 {
     int arr[] = {1,3,5,6,10};
