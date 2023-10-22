@@ -40,7 +40,7 @@ int findTargetsubsets(int d, vecotr<int> &arr){
         totalsum += x;
     }
 
-    //edege cases
+    //edge cases
     if(totalsum-d<=0)
     return 0;
     if(totalsum%2 != 0)
@@ -49,7 +49,7 @@ int findTargetsubsets(int d, vecotr<int> &arr){
     int s2 = (totalsum-d)/2;
 
     vector<vector<int>> dp(n,vector<int>(s2+1, -1));
-    return findTargetsubsets(n-1, s2, arr, dp);
+    return findSubsets(n-1, s2, arr, dp);
 
 }
 
