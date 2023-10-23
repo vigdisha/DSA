@@ -9,8 +9,9 @@ using namespace std;
 int CoinCount(vector<int>& coin,int n,int sum,vector<vector<int>> &dp){
 
 //1)sum==0
+//ie::dp[0][0]=1
 if(sum==0){
-    return dp[n][sum];
+    return dp[n][sum]=1;
 }
 //2
  if (n == 0 || sum < 0)
