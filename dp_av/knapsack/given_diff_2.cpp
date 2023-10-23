@@ -32,7 +32,7 @@ int findSubsets(int ind, int target, vector<int> &arr, vector<vector<int>> &dp)
 
 }
 //d -->difference given
-int findTargetsubsets(int d, vecotr<int> &arr){
+int findTargetsubsets(int d, vector<int> &arr){
     int n = arr.size();
     int totalsum = 0;
     for( auto x:arr)

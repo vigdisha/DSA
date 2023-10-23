@@ -2,7 +2,7 @@
 using namespace std;
 //subset sum array:check if subset exists whose sum is equal to the tragte sum
 //using knapsack
-bool issubsetSum(int arr[], int target,    vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0))){
+bool issubsetSum(int arr[], int target,vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0))){
 // Initialize the first row to true because you can achieve a sum of 0 with an empty subset
     for (int i = 0; i <= n; i++) {
         dp[i][0] = true;//empty subset
