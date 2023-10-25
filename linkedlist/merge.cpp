@@ -5,6 +5,7 @@ struct Node
  int data;
  struct Node *next;
 }*first=NULL,*second=NULL,*third=NULL;
+//third->head of merged linkedlist
 void Display(struct Node *p)
 {
  while(p!=NULL)
@@ -17,14 +18,15 @@ void create(int A[],int n)
 {
  int i;
  struct Node *t,*last;
- first=(struct Node *)malloc(sizeof(struct Node));
+ //head node of the 1-ll
+ first=new Node;
  first->data=A[0];
  first->next=NULL;
  last=first;
 
  for(i=1;i<n;i++)
  {
- t=(struct Node*)malloc(sizeof(struct Node));
+ t=new Node;
  t->data=A[i];
  t->next=NULL;
  last->next=t;
