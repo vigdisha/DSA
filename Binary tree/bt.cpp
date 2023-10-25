@@ -41,7 +41,7 @@ void levelOrderTraversal(node* root) {
 
     while(!q.empty()) {
         node* temp = q.front();
-        q.pop();
+        q.pop();  
 
         if(temp == NULL) { 
             //purana level complete traverse ho chuka hai
