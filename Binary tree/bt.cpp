@@ -62,8 +62,7 @@ void levelOrderTraversal(node* root) {
             }
         }
     }
-
-}
+    
 
 void inorder(node* root) {
     //base case

@@ -37,14 +37,14 @@ void create2(int A[],int n)
 {
  int i;
  struct Node *t,*last;
- second=(struct Node *)malloc(sizeof(struct Node));
+ second=new Node;
  second->data=A[0];
  second->next=NULL;
- last=second;
+ last=second;//now last points at the head
 
  for(i=1;i<n;i++)
  {
- t=(struct Node*)malloc(sizeof(struct Node));
+ t=new Node;
  t->data=A[i];
  t->next=NULL;
  last->next=t;
