@@ -45,8 +45,8 @@ int minimumElements(vector<int>& arr, int T) {
 }
 
 int main() {
-    vector<int> arr = {1, 2, 3};
-    int T = 7;
+    vector<int> arr = {200,100,50,20,10,5,2,1};
+    int T = 153;
     
     // Call the function to find the minimum number of elements needed
     int result = minimumElements(arr, T);

@@ -45,7 +45,7 @@ int isFullPrime(int n)
 
 int main()
 {
-      int n = 53;
+      int n = 56;
     if (isFullPrime(n))
        cout << "Yes";
     else

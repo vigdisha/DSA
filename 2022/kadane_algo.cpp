@@ -4,23 +4,23 @@
 #include<iostream>
 using namespace std;
 
-int maxSubarray(vector<int> &arr){
-    int n = arr.size();
-    int maxlen=0;
-    //brute force:
-    //generate all subarrays:(better)
-    //update with max
+// int maxSubarray(vector<int> &arr){
+//     int n = arr.size();
+//     int maxlen=0;
+//     //brute force:
+//     //generate all subarrays:(better)
+//     //update with max
 
-    for(int i=0;i<n;i++){
-        int sum=0;
-        for(int j=i;j<n;j++){
-            sum += arr[j];
-            maxlen = max(maxlen, sum);
-        }
-    }
+//     for(int i=0;i<n;i++){
+//         int sum=0;
+//         for(int j=i;j<n;j++){
+//             sum += arr[j];
+//             maxlen = max(maxlen, sum);
+//         }
+//     }
     
-   return maxlen;
-}
+//    return maxlen;
+// }
 
 int kadaneAlgo(int &arr[]){
      int sum =0;
