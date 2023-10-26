@@ -8,24 +8,23 @@
 void sortArray(vector<int>& arr, int n)
 {
 int low =0;
-int mid =0;
+
 int high = n-1;
 //only mid iterates
-while(mid<=high){
-    if(arr[mid] == 0)
-    {
-        swap(arr[mid], arr[low]);
-        mid++;
-        low++;
+for(int i=0;i<n&i<=high){
+    if(arr[i]==1){
+        swap(arr[l],arr[i]);
+        l++;
+    i++;
     }
-    else if(arr[mid] == 2){
-        swap(arr[mid], arr[high]);
-        high--
+    else if(arr[i]==2){
+        swap(arr[i], arr[high]);
+        high--;
+
     }
     else{
-        mid++;
+        i++;
     }
 }
-
 
 }

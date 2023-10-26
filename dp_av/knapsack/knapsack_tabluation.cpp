@@ -19,7 +19,7 @@ int knapsack(vector<int> &weight, vector<int> &value, int knapsack_weight, int n
         return dp[n][knapsack_weight];
     }
 
-    for (int i = 0; i < n + 1; i++)//-->ocnstitutes to n
+    for (int i = 0; i < n + 1; i++)//-->constitutes to n
     {
         for (int j = 0; j < knapsack_weight + 1; j++)//--->constitutes to knapsack_weight
         {
