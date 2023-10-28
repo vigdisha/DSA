@@ -1,5 +1,5 @@
 //coins add up to the given required amount
-//you can take one coin multiple time/ infinie supplies
+//you can take one coin multiple time/ infinite supplies
 
 //find out the ways~~~ knapsack (unbounded)
 #include<iostream>
@@ -43,7 +43,6 @@ int main()
         cout << res << endl;
     }
 }  
-
 
 // tabulation:
 
